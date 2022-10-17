@@ -1,0 +1,42 @@
+.slider{
+    margin-top: 20vh;
+    height: 100%;
+    transform: rotate(20deg);
+    overflow: visible;
+   
+
+    &__wrapper{
+        transform: scale(0.7);
+        height: 600px;
+        width: 900px;
+        transition: $transition !important;
+        will-change: transform;
+        
+    }
+    &__slide{
+        
+        width: 900px !important;
+        height: 700px;
+        overflow: hidden;
+        position: relative;
+        transition: $transition, box-shadow $transition;
+        
+    }
+    &__img{
+        position: absolute;
+        width: 110%;
+        height: 110%;
+        object-fit: cover;
+        transition: $transition !important;
+        will-change: transform;
+        
+    }
+
+}
+.open{
+    z-index: 2;
+    transform:rotate(-20deg) scale(1.5) !important;
+    box-shadow: rgb(0 0 0/ 0.6) 0 0 0 10000px ;
+    
+    
+}

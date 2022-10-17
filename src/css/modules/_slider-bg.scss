@@ -1,0 +1,12 @@
+.slider-bg{
+    margin-left:1000px;
+    z-index: 0;
+    transform: rotate(-40deg) scale(4) !important;
+    overflow: visible;
+    opacity: 0.5;
+    filter: saturate(20) blur(120px) brightness(5);
+    max-height: 100vh;
+    &__slide{
+        max-height: 100vh;
+    }
+}
